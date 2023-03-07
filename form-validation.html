@@ -10,10 +10,42 @@
   <form action="https://formsubmit.co/brownakeem431@gmail.com" method="POST">
     <h3>Registration Form</h3>
     <label for="user-id">User-id:</label>
-    <input type="text" id="user-id" name="user-name" minlength="5" maxlength="12" placeholder="Required, length 5 to 12 characters" required>
-    <br>
+    <input type="text" id="user-id" name="user-name" minlength="5" maxlength="12" placeholder="Required, length 5 to 12 characters" required><br>
     <label for="password">Password:</label> 
-    <input type="password" id="password" name="Password" minlength="7" maxlength="12" placeholder="Required, length 7 to 12 characters" required>
+    <input type="password" id="password" name="Password" minlength="7" maxlength="12" placeholder="Required, length 7 to 12 characters" required><br>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Required,letters only" required><br>
+    <label for="address">Address:</label>
+    <input type="text" id="address" name="address" placeholder="Optional"><br>
+    <label for="country">Country:</label>
+    <select name="country" id="country">
+      <option value="south-africa">South Africa</option>
+      <option value="calorado">Calorado</option>
+      <option value="mexico">Mexico</option>
+      <option value="deuschland">Deuschland</option>
+      <option value="texas">Texas</option>
+    </select><br>
+    <label for="code">ZIP Code:</label>
+    <input type="number" id="code" name="zip-code" placeholder="Required, numeric only" required><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="users-email" placeholder="Required, valid email address only" required><br>
+    <fieldset>
+      <legend>Sex:</legend>
+      <input type="radio" id="male" name="male" value="male">
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="female" value="female">
+      <label for="female">Female</label>
+    </fieldset><br>
+    <fieldset>
+      <legend>Language</legend>
+      <input type="checkbox" id="language" name="language">
+      <label for="language">English</label>
+      <input type="checkbox" id="otherlanguage" name="otherlanguage">
+      <label for="otherlanguage">Non-English</label>
+    </fieldset><br>
+    <label for="feedbackStatement">About:</label>
+    <textarea name="feedbackStatement" cols="50" rows="7" placeholder="Optional"></textarea><br>
+    <input type="submit" name="submit" value="submit-feedback">
   </form>
 </body>
 </html>
